@@ -11,7 +11,7 @@ $USER_LIST_FILE = "$BASE_PATH_FS\users.txt"
 $USERS = (Get-Content $USER_LIST_FILE).split()
 $DOMAIN = "example.com"
 
-function Create-CSR-For-User ($user, $domain) {
+function New-User-CSR ($user, $domain) {
 	try {
 		$CSR_PATH = "$BASE_PATH\_CSR\$user.csr"
 		$PRIVKEY_PATH = "$BASE_PATH\_PRIVKEY\$user.key"
