@@ -13,6 +13,8 @@ Make sur that openssl is installed on your computer and accessible through PATH
 ```bash
 openssl
 ```
+openssl is needed to create CSRs, private keys and PFXs.  
+It is not needed to import certificate on user computer.
 
 ## Usage
 ### Create CSR and private key
