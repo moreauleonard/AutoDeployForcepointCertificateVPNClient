@@ -5,7 +5,7 @@ Use case : VPN Client is installed on user computer and authentication is made w
 
 
 PFX will be stored on Windows Certificate Store  
-CRT will be store on Forcepoint AppData path  
+CRT will be stored on Forcepoint AppData path  
 
 ## Installation
 
@@ -48,4 +48,4 @@ or, create a scheduled task that will launch script impersonating user, on user 
 Pull requests are welcome.
 
 ## License
-To be defined
+[MIT](https://choosealicense.com/licenses/mit/)
