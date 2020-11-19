@@ -1,6 +1,11 @@
-# Powershell Scripts for Forcepoint VPN Clients
+# Powershell Scripts for Forcepoint VPN Clients (Windows)
 
-This powershell scripts are useful to deploy VPN authentication by certificate, for Forcepoint VPN Client.
+This powershell scripts are useful to deploy VPN authentication by certificate, for Forcepoint VPN Client.  
+Use case : VPN Client is installed on user computer and authentication is made with username/password  
+
+
+PFX will be stored on Windows Certificate Store  
+CRT will be store on Forcepoint AppData path  
 
 ## Installation
 
@@ -26,8 +31,8 @@ If you want to use pfx and not plaintext crt and privatekey, run
 ```
 
 ### Deploy VPN on user computer
-Script must be run with user session.  
-To do so, either make the user launch deploy script manually  
+Script must be run under user session.  
+To do so, either make the user manually launch script  
 or, create a scheduled task that will launch script impersonating user, on user computer.  
 #### PFX
 ```powershell
